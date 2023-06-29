@@ -21,6 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #ffccbf;
 }
 
 .action{
@@ -31,8 +32,8 @@ body{
 }
 
 .action .profile{
-    width: 120px;
-    height: 120px;
+    width: 96px;
+    height: 96px;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -44,4 +45,62 @@ body{
     height: 100%;
     position: absolute;
     object-fit: cover;
+    cursor: pointer;
+}
+
+.action .menu{
+    position: absolute;
+    right: 0;
+    width: 320px;
+    top: 120px;
+    background-color: #fff;
+    border-radius:15px ;
+}
+
+.action .menu::before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: -8px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+    transform: rotate(45deg);
+}
+
+.action .menu h3{
+    text-align: center;
+    padding: 16px;
+    font-weight: 900;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.action .menu h3 span{
+    font-size: 14px;
+    color: #777;
+}
+.action .menu ul{
+    width: 100%;
+    list-style: none;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.action .menu ul li{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+.action .menu ul li img{
+    width: 20px;
+    margin-left: 8px;
+    opacity: .6;
+}
+
+.action .menu ul li a {
+    text-decoration: none;
+    color: #000;
 }
