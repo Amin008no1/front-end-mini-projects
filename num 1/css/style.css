@@ -26,6 +26,8 @@ body{
 .action{
     top: 35%;
     right: 50%;
+    position: fixed;
+    transform: translateX(50%);
 }
 
 .action .profile{
