@@ -55,6 +55,13 @@ body{
     top: 120px;
     background-color: #fff;
     border-radius:15px ;
+    opacity: 0;
+    transform: translateY(64px);
+    transition: all .2s ease-in-out;
+}
+.action .menu.active{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .action .menu::before{
